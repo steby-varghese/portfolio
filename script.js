@@ -1,3 +1,4 @@
+
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('#site-nav');
@@ -46,3 +47,5 @@ if (!prefersReduced && 'IntersectionObserver' in window) {
 
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 }
+
+
