@@ -1,184 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Steby Varghese | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Steby Varghese – Portfolio</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Portfolio of Steby Varghese — MCA student & BCA graduate focusing on Python (Django/Flask), UI/UX and modern web development." />
+  <link rel="canonical" href="https://example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Steby Varghese – Portfolio" />
+  <meta property="og:description" content="Projects: Virtual Mouse, SOC-Platform, Eliot OS, Memory Tree." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="steby.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" href="ion.jpg" sizes="32x32">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Steby Varghese",
+    "url": "https://example.com/",
+    "jobTitle": "Aspiring Developer",
+    "sameAs": [
+      "https://github.com/stebyvarghese1",
+      "https://in.linkedin.com/in/steby-varghese-623304250",
+      "https://www.instagram.com/steby_abraham_varghese_mk"
+    ],
+    "alumniOf": [
+      "Calicut University (CCSIT, Mannarkkad)",
+      "Yuvakshetra Institute of Management Studies"
+    ]
+  }
+  </script>
 </head>
-<body class="fade-in">
+<body>
 
-  <div class="mobile-banner" id="mobileBanner">
-    <p>For a better experience, switch to Desktop Mode.</p>
-    <button onclick="document.getElementById('mobileBanner').style.display='none'">×</button>
-  </div>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Steby Varghese Home">
+        <span class="brand-mark" aria-hidden="true">SV</span>
+        <span class="brand-text">Steby Varghese</span>
+      </a>
 
-  <div class="animated-bg">
-    <span class="circle c1"></span>
-    <span class="circle c2"></span>
-    <span class="circle c3"></span>
-    <span class="circle c4"></span>
-    <span class="circle c5"></span>
-  </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+      </button>
 
-  <header class="hero">
-    <a class="download-btn" href="steby resume.pdf" download>
-      <span class="icon">⬇</span> Resume
-    </a>
-    <img src="steby.jpg" alt="Steby Varghese">
-    <h1>Steby Varghese</h1>
-    <p>Fresher | BCA Graduate | Aspiring Developer</p>
-
-<div class="social-icons">
-  <a href="https://github.com/stebyvarghese1" target="_blank" class="github"><i class="fab fa-github"></i></a>
-  <a href="https://in.linkedin.com/in/steby-varghese-623304250" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
-  <a href="https://www.instagram.com/steby_abraham_varghese_mk?igsh=bGYyNDlpdDk4NDA1" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
-</div>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-primary" href="steby resume.pdf" download>Resume</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about" class="container">
-    <h2>About Me</h2>
-    <p>
-      As a BCA graduate seeking a position in a forward-thinking organization, I aim to learn and contribute to team success while developing my technical skills and gaining hands-on experience in real-world projects.
-    </p>
+  <main id="main">
+    <!-- Hero -->
+    <section id="hero" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Aspiring Developer</p>
+          <h1>Building clean, human-centered digital products</h1>
+          <p class="hero-sub">MCA (2024–2026) & BCA graduate focused on Python (Django/Flask), front-end engineering, and UI/UX.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+          <ul class="social-list">
+            <li><a href="https://github.com/stebyvarghese1" target="_blank" aria-label="GitHub" rel="noopener"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://in.linkedin.com/in/steby-varghese-623304250" target="_blank" aria-label="LinkedIn" rel="noopener"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/steby_abraham_varghese_mk" target="_blank" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+        </div>
 
-    <div class="about-grid">
-      <div>
-        <h3>Education</h3>
-        <ul>
-          <li><strong>MCA Pursuing:</strong> CCSIT of Calicut University, Mannarkkad (2024–2026)</li>
-          <li><strong>BCA:</strong> Yuvakshetra Institute of Management Studies, Mundur (2021–2024)</li>
-          <li><strong>Plus Two:</strong> Dheshabhandhu HSS, Thachampara (2020–2021)</li>
-          <li><strong>SSLC:</strong> Dheshabhandhu HSS, Thachampara (2018–2019)</li>
-        </ul>
+        <div class="hero-media">
+          <figure class="avatar-wrap">
+            <img src="steby.jpg" alt="Portrait of Steby Varghese" width="480" height="480" loading="eager">
+          </figure>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3>Languages</h3>
-        <ul>
-          <li>English – Speak, Read, Write</li>
-          <li>Malayalam – Speak, Read, Write</li>
-          <li>Tamil – Speak</li>
-        </ul>
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I’m an MCA student (2024–2026) and BCA graduate, eager to contribute to real-world products while sharpening my engineering and design craft. I enjoy building reliable backends with Python and shipping clean, accessible interfaces.</p>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Languages</h3>
+            <ul>
+              <li>English — Speak, Read, Write</li>
+              <li>Malayalam — Speak, Read, Write</li>
+              <li>Tamil — Speak</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Tools</h3>
+            <ul>
+              <li>VS Code</li>
+              <li>PyCharm</li>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>MS Word</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Certifications</h3>
+            <p>Python & Django Skill Development – Avodha Institute (Aug 2024)</p>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3>Skills</h3>
-        <ul>
-          <li>Prompting</li>
-          <li>UI/UX Design</li>
-          <li>Python Django, Flask</li>
-          <li>HTML</li>
-          <li>CSS</li>
-        </ul>
+    <!-- Projects -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project-grid">
+          <div class="project-card">
+            <img src="image.png" alt="Virtual Mouse hand-gesture interface">
+            <h3>Virtual Mouse Using Hand Gestures</h3>
+            <p>Cursor control via OpenCV and ML gesture detection. Enables contactless click, drag, and scroll interactions.</p>
+            <a href="https://github.com/stebyvarghese1/virtualmouse" target="_blank" rel="noopener">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="soc.png" alt="SOC-Platform UI">
+            <h3>SOC-Platform</h3>
+            <p>AI-assisted security operations platform that flags potential threats across organizational systems.</p>
+            <a href="https://github.com/stebyvarghese1/soc_platform-" target="_blank" rel="noopener">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="elio.png" alt="Eliot OS branding">
+            <h3>Eliot Operating System</h3>
+            <p>Linux-based toolkit focused on forensics and ethical hacking with a curated suite of security tools.</p>
+            <a href="https://github.com/stebyvarghese1/EliotOS.git" target="_blank" rel="noopener">View Project</a>
+          </div>
+          <div class="project-card">
+            <img src="memo.png" alt="Memory Tree family graph">
+            <h3>Memory Tree</h3>
+            <p>Family knowledge app that documents relationships to preserve legacy for future generations.</p>
+            <a href="https://github.com/stebyvarghese1/Memory_tree.git" target="_blank" rel="noopener">View Project</a>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Prompting</li>
-          <li>UI Designing</li>
-          <li>Walking</li>
-          <li>Listening Music</li>
-        </ul>
+    <!-- Skills -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="cards-grid">
+          <div class="card">
+            <h3>Core</h3>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Flask</li>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Design</h3>
+            <ul>
+              <li>UI/UX</li>
+              <li>Wireframing</li>
+              <li>Prototyping</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Strengths</h3>
+            <ul>
+              <li>Prompt Engineering</li>
+              <li>Clear, accessible UI</li>
+              <li>Learning mindset</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h3>Tools Known</h3>
-        <ul>
-          <li>VS code</li>
-          <li>Pycharm</li>
-          <li>Figma</li>
-          <li>Adobe XD</li>
-          <li>Ms Word</li>
-        </ul>
+    <!-- Education -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <h2>Education</h2>
+        <ol class="timeline">
+          <li>
+            <h3>MCA (Pursuing)</h3>
+            <p>CCSIT, Calicut University — Mannarkkad · 2024–2026</p>
+          </li>
+          <li>
+            <h3>BCA</h3>
+            <p>Yuvakshetra Institute of Management Studies — Mundur · 2021–2024</p>
+          </li>
+          <li>
+            <h3>Plus Two</h3>
+            <p>Dheshabhandhu HSS — Thachampara · 2020–2021</p>
+          </li>
+          <li>
+            <h3>SSLC</h3>
+            <p>Dheshabhandhu HSS — Thachampara · 2018–2019</p>
+          </li>
+        </ol>
       </div>
+    </section>
 
-      <div>
-        <h3>Certifications</h3>
-        <ul>
-          <li>Python and Django Skill Development Certificate – Avodha Institute (Aug 2024)</li>
-        </ul>
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div class="contact-card">
+          <h3>Get in Touch</h3>
+          <p><strong>Phone:</strong> <a href="tel:+919778762923">+91 97787 62923</a></p>
+          <p><strong>Email:</strong> <a href="mailto:stebyvarghese1@gmail.com">stebyvarghese1@gmail.com</a></p>
+          <p><strong>Location:</strong> Palakkad, Kerala, India — 678597</p>
+          <div class="contact-cta">
+            <a class="btn btn-primary" href="steby resume.pdf" download>Download Resume</a>
+            <a class="btn btn-ghost" href="https://in.linkedin.com/in/steby-varghese-623304250" target="_blank" rel="noopener">Message on LinkedIn</a>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/your-id" method="POST">
+          <label><span>Name</span><input name="name" type="text" required></label>
+          <label><span>Email</span><input name="email" type="email" required></label>
+          <label><span>Message</span><textarea name="message" rows="5" required></textarea></label>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Steby Varghese</p>
+      <a class="link" href="steby resume.pdf" download>Resume</a>
     </div>
-  </section>
-
-  <section id="project" class="container">
-    <h2>Projects</h2>
-  
-    <div class="project-content">
-      <img src="image.png" alt="Virtual Mouse Project Screenshot" class="project-image">
-  
-      <div class="project-text">
-        <h3>Virtual Mouse Using Hand Gestures</h3>
-        <p>
-          This project uses computer vision and machine learning to enable cursor control through hand gestures. A webcam captures hand movements, processed using OpenCV to detect and interpret gestures for cursor movement, clicking, and scrolling. This contactless approach integrates Python, image processing, and machine learning, demonstrating a shift towards natural, ergonomic human-computer interactions.
-        </p>
-        <a href="https://github.com/stebyvarghese1/virtualmouse" target="_blank" class="project-link">View Project</a>
-      </div>
-    </div>
-
-    <br><br>
-
-    <div class="project-content">
-      <img src="soc.png" alt="SOC-Platform Screenshot" class="project-image">
-  
-      <div class="project-text">
-        <h3>SOC-Platform</h3>
-        <p>
-          soc-platform is a project that helps to identify the threats on systems used in a organization/network automatically by the help of ai.
-        </p>
-        <a href="https://github.com/stebyvarghese1/soc_platform-" target="_blank" class="project-link">View Project</a>
-      </div>
-    </div>
-
-    <br><br>
-
-    <div class="project-content">
-      <img src="elio.png" alt="Eliot-OS" class="project-image">
-  
-      <div class="project-text">
-        <h3>Eliot Operating System (ongoing...)</h3>
-        <p>
-          Eliot is a Operating System that is helpful for forensic investigation / ethical hacking professionals. it has inbuilt 8 powerful tools they are kali, Parrot Security, BlackArch, BackBox, Pentoo, Tails, DEFT Linux, CAINE.
-        </p>
-        <a href="https://github.com/stebyvarghese1/EliotOS.git" target="_blank" class="project-link">View Project</a>
-      </div>
-    </div>
-
-    <br><br>
-
-    <div class="project-content">
-      <img src="memo.png" alt="Eliot-OS" class="project-image">
-  
-      <div class="project-text">
-        <h3>memory tree (ongoing...)</h3>
-        <p>
-          Memory tree is a application that can help to remember every family persons and their family connetions to the future generations. this will help generations to remember the family legacy.
-        </p>
-        <a href="https://github.com/stebyvarghese1/Memory_tree.git" target="_blank" class="project-link">View Project</a>
-      </div>
-    </div>
-
-    <br>
-
-  </section>
-
-  <section id="contact" class="container">
-    <h2>Contact</h2>
-    <p>Phone: +91 97787 62923</p>
-    <p>Email: stebyvarghese1@gmail.com</p>
-    <p>Location: Palakkad, Kerala, India - 678597</p>
-  </section>
-
-  <footer>
-    <p>© 2025 Steby Varghese. All rights reserved.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
 </body>
 </html>
-
